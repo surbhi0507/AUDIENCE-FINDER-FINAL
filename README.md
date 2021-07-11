@@ -1,0 +1,2 @@
+# AUDIENCE-FINDER-FINAL
+Developed an application which can be used by a single user/company               to target a particular section of market, that is, Designers, Developers, etc.               Designed the frontend using HTML, CSS, Bootstrap, Javascript. Scraped target audience’s data;               for instance- Designers, Developers and Professors.               Used Django in the backend to select the target audience and send an email by a single to each of them.
