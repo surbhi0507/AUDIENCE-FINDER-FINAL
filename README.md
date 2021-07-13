@@ -1,2 +1,28 @@
-# AUDIENCE-FINDER-FINAL
-Developed an application which can be used by a single user/company               to target a particular section of market, that is, Designers, Developers, etc.               Designed the frontend using HTML, CSS, Bootstrap, Javascript. Scraped target audience’s data;               for instance- Designers, Developers and Professors.               Used Django in the backend to select the target audience and send an email by a single to each of them.
+
+## noob log kaise run kare ise
+
+
+
+Install the requirements:
+
+1 ye jo likha hai use terminal p likh do
+
+```bash
+pip install -r requirements.txt
+```
+
+Apply the migrations:
+
+```bash
+python manage.py migrate
+```
+
+Finally, run the development server:
+
+```bash
+python manage.py runserver
+```
+
+The project will be available at **127.0.0.1:8000**.
+
+
