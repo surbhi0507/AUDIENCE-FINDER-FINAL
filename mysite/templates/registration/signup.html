@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<style>
+  .app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: black;
+  border-bottom: 1px solid rgb(24, 23, 23);
+  color: rgb(10, 9, 9);
+  font-size: 14px;
+  text-transform: lowercase;
+  outline: none;
+  transition: border-color .2s;
+  box-sizing: border-box;
+}
+.app-form-group {
+  margin-bottom: 15px;
+}
+</style>
+  <div class="row justify-content-center">
+    <div class="col-8">
+      <div class="card">
+        <div class="card-body">
+          <h2>Sign Up</h2><br>
+          <div>
+            <form method="post">
+              {% csrf_token %}
+           <label for="name">Name</label><br>
+           <input type="text" class="app-form-control" id="name" name="name" placeholder="Your Name">
+          </div>
+          <div>
+            <label for="exampleform">Email</label><br>
+            <input type="email" class="app-form-control" id="exampleform" name="email" placeholder="name@example.com">
+           </div>
+           <div>
+            <label for="phone">Phone Number</label><br>
+            <input type="phone" class="app-form-control" id="phone" name="phone" placeholder="Your Number">
+           </div>
+           <div>
+            <label for="address">Address</label><br>
+            <input type="text" class="app-form-control" id="address" name="address" placeholder="Address">
+           </div>
+            
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary">Sign up</button>
+            <button type="reset" class="btn btn-primary">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
